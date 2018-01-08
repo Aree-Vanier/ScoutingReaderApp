@@ -1,9 +1,7 @@
 package ca.lakeeffectrobotics.scoutingreader;
 import java.util.ArrayList;
 
-
 public class Dictionary<T> {
-	
 	public ArrayList<String> labels = new ArrayList<>();
 	public ArrayList<T> data = new ArrayList<>();
 	
@@ -22,7 +20,7 @@ public class Dictionary<T> {
 	
 	public T getData(String label){
 		for(String l: labels){
-			if(l.equals(labels)){
+			if(l.equals(label)){
 				return data.get(labels.indexOf(l));
 			}
 		}
